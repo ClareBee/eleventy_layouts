@@ -20,7 +20,7 @@
 
 <body>
   <div class="preloader">
-      <span class="preloader-spin"></span>
+    <span class="preloader-spin"></span>
   </div>
 
   <div class="site">
@@ -34,11 +34,6 @@
           </div>
           <div class="col-6 col-sm-9 nav-column clearfix">
             <div class="right-nav">
-              <span class="search-icon fa fa-search"></span>
-              <form action="#" class="search-form">
-                <input type="search" placeholder="search now">
-                <button type="submit"><i class="fa fa-search"></i></button>
-              </form>
               <div class="header-social">
                 <a href="#" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-twitter"></a>
@@ -47,43 +42,23 @@
             </div>
             <nav id="menu" class="d-none d-lg-block">
               <ul>
-                        <li class="current-menu-item has-child">
-                            <a href="index.html">Home</a>
-                            <ul class="sub-menu">
-                                <li><a href="index.html">Home - 01</a></li>
-                                <li><a href="index-2.html">Home - 02</a></li>
-                                <li><a href="index-3.html">Home - 03</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li class="has-child">
-                            <a href="#">Pages</a>
-                            <ul class="sub-menu">
-                                <li><a href="404.html">404</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="career.html">Career</a></li>
-                                <li><a href="coming-soon.html">Coming Soon</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="faq.html">Faq</a></li>
-                                <li><a href="portfolio.html">Portfolio</a></li>
-                                <li><a href="pricing.html">Pricing</a></li>
-                                <li><a href="service.html">Service</a></li>
-                                <li><a href="team.html">Team</a></li>
-                                <li><a href="testimonial.html">Testimonial</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+                <li class="current-menu-item">
+                  <a href="/">Home</a>
+                </li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/testimonials">Testimonials</a></li>
+                <li><a href="/contact">Contact</a></li>
+              </ul>
             </nav>
           </div>
         </div>
       </div>
     </header>
-    <div class="page-title sp" style="background-image: url(assets/img/page-title.jpg)">
+    <div class="page-title sp" style="background-image: url({{ backgroundImage }})">
       <div class="container text-center">
-        <h2>About Us</h2>
-        <p>Malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+        <h2>{{ title }}</h2>
+        <p>{{ description }}</p>
       </div>
     </div>
 
