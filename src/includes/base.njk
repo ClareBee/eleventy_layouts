@@ -29,7 +29,7 @@
         <div class="row">
           <div class="col-6 col-sm-3 logo-column">
             <a href="index.html" class="logo">
-              <img src="assets/img/logo.png" alt="logo">
+              <img src="/assets/img/logo.png" alt="logo">
             </a>
           </div>
           <div class="col-6 col-sm-9 nav-column clearfix">
@@ -55,12 +55,15 @@
         </div>
       </div>
     </header>
-    <div class="page-title sp" style="background-image: url({{ backgroundImage }})">
-      <div class="container text-center">
-        <h2>{{ title }}</h2>
-        <p>{{ description }}</p>
+    {% block pageHeader %}
+      <div class="page-title sp" style="background-image: url({{ backgroundImage }})">
+        <div class="container text-center">
+          <h2>{{ title }}</h2>
+          <p>{{ description }}</p>
+        </div>
       </div>
-    </div>
+    {% endblock pageHeader %}
+
     {% block content %}
       {{ content | safe }}
     {% endblock content %}

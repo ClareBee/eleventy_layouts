@@ -1,214 +1,27 @@
 ---
-layout: 'base.njk'
-title: 'Home'
-description: 'Description'
-backgroundImage: '/assets/img/page-title.jpg'
+layout: 'layouts/homepage.njk'
+banners:
+  - headline: 'headline'
+    blurb: 'lorem ipsum'
+    background: '/assets/img/slide1.jpg'
+    link:
+        text: 'more'
+        url: '/about'
+  - headline: 'headline'
+    blurb: 'lorem ipsum'
+    background: '/assets/img/slide1.jpg'
+    link:
+        text: 'more'
+        url: '/about'
+about:
+  title: 'About title'
+  description: 'About description'
+  image: '/assets/img/about.png'
+  link:
+    text: 'more'
+    url: '/about'
+
+services:
+  title: 'Our services'
+  description: 'lorem ipsum'
 ---
-<div class="hero-slider">
-  <div class="single-slide" style="background-image: url(assets/img/slide1.jpg)">
-    <div class="inner">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="slide-content">
-              <h2>We Are Digital Product Design Agency.</h2>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-              <div class="slide-btn">
-                <a href="#" class="button">Learn More</a>
-                <a href="#" class="button-2">Live Preview</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="single-slide" style="background-image: url(assets/img/slide2.jpg)">
-    <div class="inner">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 text-center">
-            <div class="slide-content">
-              <h2>We Are Digital Product Design Agency.</h2>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-              <div class="slide-btn">
-                <a href="#" class="button">Learn More</a>
-                <a href="#" class="button-2">Live Preview</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="single-slide" style="background-image: url(assets/img/slide3.jpg)">
-    <div class="inner">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="slide-content">
-              <h2>We Are Digital Product Design Agency.</h2>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-              <div class="slide-btn">
-                <a href="#" class="button">Learn More</a>
-                <a href="#" class="button-2">Live Preview</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 text-center">
-            <div class="inner embed-responsive embed-responsive-16by9" data-margin="25px 0 0">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/GYtUAYYDPo0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="portfolio-area sp">
-  <div class="container">
-    <div class="section-title">
-      <h2>Latest Work</h2>
-      <p>Malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
-    </div>
-    <div class="row">
-      <div class="single-portfolio col-md-4">
-        <div class="inner">
-          <div class="portfolio-img">
-            <img src="assets/img/portfolio1.jpg" alt="portfolio-image">
-            <div class="hover-content">
-              <div>
-                <a href="#" class="button">View Case Study</a>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-content">
-            <a href="#"><h3>The Back Chiropractor</h3></a>
-            <span>Ceramics, Design</span>
-          </div>
-        </div>
-      </div>
-      <div class="single-portfolio col-md-4">
-        <div class="inner">
-          <div class="portfolio-img">
-            <img src="assets/img/portfolio2.jpg" alt="portfolio-image">
-            <div class="hover-content">
-              <div>
-                <a href="#" class="button">View Case Study</a>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-content">
-            <a href="#"><h3>The Back Chiropractor</h3></a>
-            <span>Ceramics, Design</span>
-          </div>
-        </div>
-      </div>
-      <div class="single-portfolio col-md-4">
-        <div class="inner">
-          <div class="portfolio-img">
-            <img src="assets/img/portfolio3.jpg" alt="portfolio-image">
-            <div class="hover-content">
-              <div>
-                <a href="#" class="button">View Case Study</a>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-content">
-            <a href="#"><h3>The Back Chiropractor</h3></a>
-            <span>Ceramics, Design</span>
-          </div>
-        </div>
-      </div>
-      <div class="single-portfolio col-md-4">
-        <div class="inner">
-          <div class="portfolio-img">
-            <img src="assets/img/portfolio4.jpg" alt="portfolio-image">
-            <div class="hover-content">
-              <div>
-                <a href="#" class="button">View Case Study</a>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-content">
-            <a href="#"><h3>The Back Chiropractor</h3></a>
-            <span>Ceramics, Design</span>
-          </div>
-        </div>
-      </div>
-      <div class="single-portfolio col-md-4">
-        <div class="inner">
-          <div class="portfolio-img">
-            <img src="assets/img/portfolio5.jpg" alt="portfolio-image">
-            <div class="hover-content">
-              <div>
-                <a href="#" class="button">View Case Study</a>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-content">
-            <a href="#"><h3>The Back Chiropractor</h3></a>
-            <span>Ceramics, Design</span>
-          </div>
-        </div>
-      </div>
-      <div class="single-portfolio col-md-4">
-        <div class="inner">
-          <div class="portfolio-img">
-            <img src="assets/img/portfolio6.jpg" alt="portfolio-image">
-            <div class="hover-content">
-              <div>
-                <a href="#" class="button">View Case Study</a>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-content">
-            <a href="#"><h3>The Back Chiropractor</h3></a>
-            <span>Ceramics, Design</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12 text-center" data-margin="40px 0 0">
-        <a href="#" class="button">More Works</a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="spb">
-  <div class="brand-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-6 single-brand">
-          <div class="inner">
-            <a href="#">
-              <img src="assets/img/brand1.png" alt="">
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3 col-6 single-brand">
-          <div class="inner">
-            <a href="#">
-              <img src="assets/img/brand2.png" alt="">
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3 col-6 single-brand">
-          <div class="inner">
-            <a href="#">
-              <img src="assets/img/brand3.png" alt="">
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3 col-6 single-brand">
-          <div class="inner">
-            <a href="#">
-              <img src="assets/img/brand4.png" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
