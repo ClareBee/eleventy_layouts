@@ -1,7 +1,7 @@
 ---
 layout: 'layouts/simple.njk'
-title: 'video making'
+title: 'product marketing'
 description: 'lorem ipsum'
-faIcon: 'film'
+faIcon: 'bullhorn'
 tags: 'services' # puts into collection of same name
 ---
