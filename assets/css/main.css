@@ -17,7 +17,7 @@
  *
  * 00 - 00 - common & reset css
  * 01. header
- * 02. hero-area 
+ * 02. hero-area
  * 03. brand-area
  * 04. service-area
  * 05. portfolio-area
@@ -37,35 +37,35 @@
  *
  */
 .c1 {
-  color: #2d3666; }
+  color: #847E89; }
 
 .c1-bg {
-  background-color: #2d3666; }
+  background-color: #847E89; }
 
 .c1-bo {
-  border-color: #2d3666 !important; }
+  border-color: #847E89 !important; }
 
 .c2 {
-  color: #222538; }
+  color: #252323; }
 
 .c2-bg {
-  background-color: #222538; }
+  background-color: #252323; }
 
 .c2-bo {
-  border-color: #222538 !important; }
+  border-color: #252323 !important; }
 
 .c3, #menu ul ul li a:hover, .single-service.bordered .inner:hover .icon, .bordered.single-service-2 .inner:hover .icon, .bordered.single-service-3 .inner:hover .icon,
 .single-service.bordered .inner:hover h4,
 .bordered.single-service-2 .inner:hover h4,
 .bordered.single-service-3 .inner:hover h4, .single-service-3 .inner:hover .title .icon, .isotope-menu li.active, .isotope-menu li:hover, .single-portfolio .inner .portfolio-img .hover-content .button, .single-portfolio .inner .portfolio-content h3:hover, .faq-sidebar li a, .single-pricing .inner a.button:hover, .single-pricing-2 .inner a.button:hover, .single-pricing-2.active .inner a.button {
-  color: #4698ff; }
+  color: #305252; }
 
 .c3-bg, .bg1, .button, .hero-slider .owl-dots .owl-dot.active, .single-service-2:hover .inner, .single-portfolio .inner .portfolio-img .hover-content, .faq .single-item.active, .single-faq h2 span, .footer_widget .nw_form button, .tabs-area .tabs-nav li a.active, .single-team .inner .team-img::after, .single-pricing.active .inner, .active.single-pricing-2 .inner, .single-pricing-2.active .inner .title .price {
-  background-color: #4698ff; }
+  background-color: #305252; }
 
 .c3-bo, .button, .single-service.bordered .inner:hover, .bordered.single-service-2 .inner:hover, .bordered.single-service-3 .inner:hover, .testimonial-slider .single-slide, .tabs-area .tabs-nav li a::after, .tabs-area .tabs-nav li a.active, .contact-form input:not([type="submit"]):focus,
 .contact-form textarea:focus {
-  border-color: #4698ff !important; }
+  border-color: #305252 !important; }
 
 .trns, .button, .button-2, .nav-column a, .nav-column span, .nav-column .right-nav span, form.search-form, #menu ul > li > a, #menu ul ul, #menu ul ul::after, #menu ul ul li a, .hero-slider .owl-dots .owl-dot, .single-service .inner, .single-service-2 .inner, .single-service-3 .inner, .single-service .inner .title .icon, .single-service-2 .inner .title .icon, .single-service-3 .inner .title .icon, .single-service .inner .title h4, .single-service-2 .inner .title h4, .single-service-3 .inner .title h4, .single-service .inner .content, .single-service-2 .inner .content, .single-service-3 .inner .content, .isotope-menu li, .single-portfolio .inner .portfolio-img .hover-content, .single-portfolio .inner .portfolio-content h3, .faq-sidebar li a, .single-team .inner .team-img::after, .contact-form input:not([type="submit"]),
 .contact-form textarea {
@@ -186,7 +186,7 @@ span {
   color: #fff;
   background-color: transparent;
   border: 2px solid #c1c2c5;
-  color: #2d3666;
+  color: #847E89;
   border-radius: 3px;
   font-weight: 400; }
   .button-2:hover {
@@ -210,7 +210,7 @@ span {
     margin: 0 0 5px;
     font-size: 40px;
     font-weight: 700;
-    color: #222538; }
+    color: #252323; }
   .section-title.white {
     color: #ffffff; }
     .section-title.white h2 {
@@ -232,16 +232,16 @@ body {
   font-size: 14px;
   line-height: 27px;
   font-weight: 400;
-  color: #2d3666; }
+  color: #847E89; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #222538; }
+  color: #252323; }
 
 iframe {
   border: none; }
 
 .slicknav_menu {
-  background-color: #1f2131;
+  background-color: #03030D;
   border-bottom: 1px solid #585757; }
   @media only screen and (min-width: 991px) {
     .slicknav_menu {
@@ -251,7 +251,7 @@ iframe {
  *   01. header
  ***************************** */
 header {
-  background-color: #222538;
+  background-color: #252323;
   padding: 18px 0; }
 
 .logo-column a.logo {
@@ -264,7 +264,7 @@ header {
   padding: 5px 0;
   font-size: 16px; }
   .nav-column a, .nav-column span {
-    color: #7286a0;
+    color: #FCF7F8;
     line-height: 25px;
     vertical-align: top;
     cursor: pointer; }
@@ -370,7 +370,7 @@ form.search-form button {
     #menu ul ul li a {
       display: block;
       font-weight: 300;
-      color: #222538;
+      color: #252323;
       font-size: 13px;
       padding: 0;
       margin: 5px 0; }
@@ -503,7 +503,7 @@ form.search-form button {
     .single-service .inner .content, .single-service-2 .inner .content, .single-service-3 .inner .content {
       font-weight: 300;
       font-size: 14px;
-      color: #2d3666;
+      color: #847E89;
       line-height: 26px; }
       .single-service .inner .content p:last-child, .single-service-2 .inner .content p:last-child, .single-service-3 .inner .content p:last-child {
         margin-bottom: 0; }
@@ -582,7 +582,7 @@ form.search-form button {
     display: inline-block;
     padding: 0 15px;
     cursor: pointer;
-    color: #7286a0; }
+    color: #FCF7F8; }
 
 .single-portfolio {
   margin: 20px 0; }
@@ -797,8 +797,8 @@ form.search-form button {
  *   08. footer-top
  ***************************** */
 footer {
-  background-color: #272938;
-  color: #7286a0;
+  background-color: #252323;
+  color: #FCF7F8;
   line-height: 24px; }
 
 .footer-top {
@@ -816,7 +816,7 @@ footer {
 
 .footer_widget h4,
 .footer_widget h5 {
-  color: #7286a0; }
+  color: #FCF7F8; }
 
 @media only screen and (max-width: 991px) {
   .footer_widget {
@@ -832,7 +832,7 @@ footer {
   padding: 0;
   margin: 0; }
   .footer_widget ul li a {
-    color: #7286a0;
+    color: #FCF7F8;
     padding: 3px 0; }
 .footer_widget .media {
   margin-bottom: 14px; }
@@ -840,7 +840,7 @@ footer {
     margin: 0;
     line-height: 20px; }
   .footer_widget .media a {
-    color: #7286a0;
+    color: #FCF7F8;
     font-size: 14px; }
   .footer_widget .media span {
     color: rgba(255, 255, 255, 0.4);
@@ -850,20 +850,20 @@ footer {
   .footer_widget .nw_form input {
     width: 100%;
     display: block;
-    background-color: #1f2131;
+    background-color: #03030D;
     border-radius: 3px;
     height: 40px;
-    border: 1px solid #1f2131;
-    color: #7286a0;
+    border: 1px solid #03030D;
+    color: #FCF7F8;
     text-indent: 20px; }
     .footer_widget .nw_form input::-webkit-input-placeholder {
-      color: #7286a0; }
+      color: #FCF7F8; }
     .footer_widget .nw_form input::-moz-placeholder {
-      color: #7286a0; }
+      color: #FCF7F8; }
     .footer_widget .nw_form input:-ms-input-placeholder {
-      color: #7286a0; }
+      color: #FCF7F8; }
     .footer_widget .nw_form input:-moz-placeholder {
-      color: #7286a0; }
+      color: #FCF7F8; }
   .footer_widget .nw_form button {
     position: absolute;
     right: 0;
@@ -875,10 +875,10 @@ footer {
     border-radius: 0 3px 3px 0; }
 
 .footer-bottom {
-  background-color: #1f2131;
+  background-color: #03030D;
   padding: 25px 0; }
   .footer-bottom a {
-    color: #7286a0;
+    color: #FCF7F8;
     padding: 0 10px; }
   @media only screen and (max-width: 991px) {
     .footer-bottom {
@@ -906,9 +906,9 @@ footer {
         margin-top: -5px; } }
     .tabs-area .tabs-nav li a {
       text-align: center;
-      color: #222538;
+      color: #252323;
       display: block;
-      border-bottom: 2px solid #222538;
+      border-bottom: 2px solid #252323;
       padding: 25px 0; }
       .tabs-area .tabs-nav li a::after {
         content: "";
@@ -1063,7 +1063,7 @@ footer {
  *   13. skill-area
  ***************************** */
 .skill-area .container {
-  background-color: #1f2131;
+  background-color: #03030D;
   border-radius: 5px;
   padding: 70px 100px;
   color: #fff; }
@@ -1110,7 +1110,7 @@ footer {
 .single-pricing, .single-pricing-2 {
   margin: 7.5px 0; }
   .single-pricing .inner, .single-pricing-2 .inner {
-    background-color: #1f2131;
+    background-color: #03030D;
     padding: 35px;
     color: #90a0b2;
     border-radius: 5px;
@@ -1170,7 +1170,7 @@ footer {
     display: -o-inline-flex;
     display: inline-flex; }
 .single-pricing-2.active .inner {
-  background-color: #1f2131;
+  background-color: #03030D;
   color: #90a0b2; }
   .single-pricing-2.active .inner a.button {
     background-color: #fff;
