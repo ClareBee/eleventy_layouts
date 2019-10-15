@@ -1,7 +1,7 @@
 ---
 layout: 'base.njk'
 title: 'Contact'
-description: 'Description'
+description: ''
 backgroundImage: '/assets/img/circuit.jpg'
 ---
 <div class="contact-area sp">
@@ -10,12 +10,14 @@ backgroundImage: '/assets/img/circuit.jpg'
       <div class="col-md-5 contact-info">
         <div class="single-info">
           <h5>Email</h5>
-          <p>clarebee@protonmail.com</p>
+          <p>{{ settings.email }}</p>
         </div>
         <div class="single-info">
           <h5>Social</h5>
           <p>
-            <a href="#" class="fa fa-github"></a>
+            {% for social in settings.socials %}
+              <a href="{{ social.url }}" class="fa fa-{{social.name}}"></a>
+            {% endfor %}
           </p>
         </div>
       </div>

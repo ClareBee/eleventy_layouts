@@ -2,20 +2,20 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{ title }}</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>{{ title }}</title>
 
-        <!-- Required CSS files -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/owl.carousel.css">
-    <link rel="stylesheet" href="/assets/css/barfiller.css">
-    <link rel="stylesheet" href="/assets/css/animate.css">
-    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/slicknav.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
+      <!-- Required CSS files -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/owl.carousel.css">
+  <link rel="stylesheet" href="/assets/css/barfiller.css">
+  <link rel="stylesheet" href="/assets/css/animate.css">
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/slicknav.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
 <body>
@@ -35,7 +35,9 @@
           <div class="col-6 col-sm-9 nav-column clearfix">
             <div class="right-nav">
               <div class="header-social">
-                <a href="https://github.com/ClareBee" rel="noopenner noreferrer" target="_blank" class="fa fa-github"></a>
+                {% for social in settings.socials %}
+                <a href="{{ social.url }}" rel="noopenner noreferrer" target="_blank" class="fa fa-{{ social.name }}"></a>
+                {% endfor %}
               </div>
             </div>
             <nav id="menu" class="d-none d-lg-block">
@@ -93,7 +95,7 @@
                 <h4>Project</h4>
                   <ul>
                     <li><a href="/topics">Topics</a></li>
-                    <li><a href="#">Resources</a></li>
+                    <li><a href="/resources">Resources</a></li>
                     <li><a href="/contact">Contact</a></li>
                   </ul>
                 </div>
@@ -122,13 +124,13 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="copyright-txt">
-                    © 2019 Adapted from Flat Pro. All Rights Reserved.
+                  © 2019 Adapted from Flat Pro. All Rights Reserved.
                 </div>
               </div>
             <div class="col-lg-6 text-right">
               <div class="footer-nav">
-                <a href="#">Home</a>
-                <a href="#">Topics</a>
+                <a href="/">Home</a>
+                <a href="/topics">Topics</a>
                 <a href="#">Blog</a>
               </div>
             </div>
