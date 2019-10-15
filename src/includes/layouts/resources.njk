@@ -4,17 +4,17 @@
 
   <div class="row ml-4 mr-4 sp">
     <div class="testimonial-slider bordered">
-      {% for testimonial in collections.testimonials %}
+      {% for resource in collections.resources %}
         <div class="single-slide">
           <div class="inner">
-            <p>{{ testimonial.data.content }}</p>
+            <p>{{ resource.data.content }}</p>
             <div class="client-info">
               <div class="client-img">
-                <img src="{{ testimonial.data.headshot }}" alt="client">
+                <img src="{{ resource.data.icon }}" alt="resource">
               </div>
               <div class="client-data">
-                <h4>{{ testimonial.data.name }}</h4>
-                <span>{{ testimonial.data.job }}</span>
+                <h4>{{ resource.data.name }}</h4>
+                <span>{{ resource.data.site }}</span>
               </div>
             </div>
           </div>

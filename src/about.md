@@ -1,8 +1,8 @@
 ---
 layout: 'layouts/simple.njk'
-title: 'About Us'
+title: 'About'
 description: 'Description'
-backgroundImage: '/assets/img/page-title.jpg'
+backgroundImage: '/assets/img/circuit.jpg'
 ---
 ### Header
 

@@ -5,18 +5,18 @@
 <div class="service-area bg2 sp">
   <div class="container">
     <div class="row">
-    {% for service in collections.services %}
+    {% for topic in collections.topics %}
       <div class="col-lg-4 col-md-6 single-service">
           <div class="inner">
               <div class="title">
                   <div class="icon">
-                      <i class="fa fa-{{ service.data.faIcon }}"></i>
+                      <i class="fa fa-{{ topic.data.faIcon }}"></i>
                   </div>
-                  <h4>{{ service.data.title }}</h4>
+                  <h4>{{ topic.data.title }}</h4>
               </div>
               <div class="content">
-                  <p>{{ service.data.description }}</p>
-                  <a href={{service.url}}>Read more</a>
+                  <p>{{ topic.data.description }}</p>
+                  <a href={{topic.url}}>Read more</a>
               </div>
           </div>
       </div>
