@@ -1,11 +1,12 @@
 ---
 layout: 'layouts/simple.njk'
 title: 'About'
-description: 'Description'
+description: ''
 backgroundImage: '/assets/img/circuit.jpg'
 ---
-### Header
 
-General content goes here
+Small project exploring 11ty static site generator adapting templates from Flat Pro.
 
-<a href="/" class="button">Button</a>
+Used as a learning log for CSS layout techniques.
+
+Future plan to integrate with Netlify CMS.
