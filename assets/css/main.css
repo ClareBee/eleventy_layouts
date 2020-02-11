@@ -18,18 +18,13 @@
  * 00 - 00 - common & reset css
  * 01. header
  * 02. hero-area
- * 03. brand-area
  * 04. service-area
  * 05. portfolio-area
  * 06. testimonial-area
- * 07. faq-area
  * 08. footer-top
  * 09. tabs-area
  * 10. about-area
- * 11. team-area
  * 12. contact-area
- * 13. skill-area
- * 14. pricing-area
  * 15. extra */
 /*****************************
  *   00 - common & reset css
@@ -57,17 +52,17 @@
 .c3, #menu ul ul li a:hover, .single-service.bordered .inner:hover .icon, .bordered.single-service-2 .inner:hover .icon, .bordered.single-service-3 .inner:hover .icon,
 .single-service.bordered .inner:hover h4,
 .bordered.single-service-2 .inner:hover h4,
-.bordered.single-service-3 .inner:hover h4, .single-service-3 .inner:hover .title .icon, .isotope-menu li.active, .isotope-menu li:hover, .single-portfolio .inner .portfolio-img .hover-content .button, .single-portfolio .inner .portfolio-content h3:hover, .faq-sidebar li a, .single-pricing .inner a.button:hover, .single-pricing-2 .inner a.button:hover, .single-pricing-2.active .inner a.button {
+.bordered.single-service-3 .inner:hover h4, .single-service-3 .inner:hover .title .icon, .isotope-menu li.active, .isotope-menu li:hover, .single-portfolio .inner .portfolio-img .hover-content .button, .single-portfolio .inner .portfolio-content h3:hover, .single-pricing .inner a.button:hover, .single-pricing-2 .inner a.button:hover, .single-pricing-2.active .inner a.button {
   color: #305252; }
 
-.c3-bg, .bg1, .button, .hero-slider .owl-dots .owl-dot.active, .single-service-2:hover .inner, .single-portfolio .inner .portfolio-img .hover-content, .faq .single-item.active, .single-faq h2 span, .footer_widget .nw_form button, .tabs-area .tabs-nav li a.active, .single-team .inner .team-img::after, .single-pricing.active .inner, .active.single-pricing-2 .inner, .single-pricing-2.active .inner .title .price {
+.c3-bg, .bg1, .button, .hero-slider .owl-dots .owl-dot.active, .single-service-2:hover .inner, .single-portfolio .inner .portfolio-img .hover-content, .footer_widget .nw_form button, .tabs-area .tabs-nav li a.active, .single-pricing.active .inner, .active.single-pricing-2 .inner, .single-pricing-2.active .inner .title .price {
   background-color: #305252; }
 
 .c3-bo, .button, .single-service.bordered .inner:hover, .bordered.single-service-2 .inner:hover, .bordered.single-service-3 .inner:hover, .testimonial-slider .single-slide, .tabs-area .tabs-nav li a::after, .tabs-area .tabs-nav li a.active, .contact-form input:not([type="submit"]):focus,
 .contact-form textarea:focus {
   border-color: #305252 !important; }
 
-.trns, .button, .button-2, .nav-column a, .nav-column span, .nav-column .right-nav span, form.search-form, #menu ul > li > a, #menu ul ul, #menu ul ul::after, #menu ul ul li a, .hero-slider .owl-dots .owl-dot, .single-service .inner, .single-service-2 .inner, .single-service-3 .inner, .single-service .inner .title .icon, .single-service-2 .inner .title .icon, .single-service-3 .inner .title .icon, .single-service .inner .title h4, .single-service-2 .inner .title h4, .single-service-3 .inner .title h4, .single-service .inner .content, .single-service-2 .inner .content, .single-service-3 .inner .content, .isotope-menu li, .single-portfolio .inner .portfolio-img .hover-content, .single-portfolio .inner .portfolio-content h3, .faq-sidebar li a, .single-team .inner .team-img::after, .contact-form input:not([type="submit"]),
+.trns, .button, .nav-column a, .nav-column span, .nav-column .right-nav span, form.search-form, #menu ul > li > a, #menu ul ul, #menu ul ul::after, #menu ul ul li a, .hero-slider .owl-dots .owl-dot, .single-service .inner, .single-service-2 .inner, .single-service-3 .inner, .single-service .inner .title .icon, .single-service-2 .inner .title .icon, .single-service-3 .inner .title .icon, .single-service .inner .title h4, .single-service-2 .inner .title h4, .single-service-3 .inner .title h4, .single-service .inner .content, .single-service-2 .inner .content, .single-service-3 .inner .content, .isotope-menu li, .single-portfolio .inner .portfolio-img .hover-content, .single-portfolio .inner .portfolio-content h3, .contact-form input:not([type="submit"]),
 .contact-form textarea {
   -webkit-transition: all 0.3s cubic-bezier(0.84, 0.35, 0.39, 0.74) 0s;
   transition: all 0.3s cubic-bezier(0.84, 0.35, 0.39, 0.74) 0s; }
@@ -191,27 +186,6 @@ span {
     border-color: #333 !important; }
   @media only screen and (max-width: 767px) {
     .button {
-      font-size: 13px;
-      padding: 0 15px;
-      line-height: 32px; } }
-
-.button-2 {
-  font-size: 14px;
-  line-height: 40px;
-  padding: 0 20px;
-  border: 2px solid;
-  color: #fff;
-  background-color: transparent;
-  border: 2px solid #c1c2c5;
-  color: #847E89;
-  border-radius: 3px;
-  font-weight: 400; }
-  .button-2:hover {
-    color: #fff;
-    background-color: #333;
-    border-color: #333; }
-  @media only screen and (max-width: 767px) {
-    .button-2 {
       font-size: 13px;
       padding: 0 15px;
       line-height: 32px; } }
@@ -484,19 +458,6 @@ form.search-form button {
     right: 0; }
 
 /*****************************
- *   03. brand-area
- ***************************** */
-.brand-area {
-  padding: 50px 0; }
-
-.spb .brand-area {
-  padding: 0; }
-
-.single-brand {
-  text-align: center;
-  margin: 5px 0; }
-
-/*****************************
  *   04. service-area
  ***************************** */
 .single-service, .single-service-2, .single-service-3 {
@@ -706,111 +667,6 @@ form.search-form button {
         right: -12.5px; } }
 
 /*****************************
- *   07. faq-area
- ***************************** */
-.faq-area .section-title {
-  margin-bottom: 60px; }
-
-.faq {
-  padding: 0;
-  margin: 0;
-  list-style: none; }
-  .faq .single-item {
-    background-color: #fff;
-    padding: 20px;
-    padding-left: 50px;
-    line-height: 28px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    cursor: pointer;
-    border-radius: 4px;
-    position: relative; }
-    .faq .single-item::after {
-      content: "+";
-      width: 25px;
-      height: 25px;
-      border-radius: 50%;
-      background-color: #222;
-      color: #fff;
-      position: absolute;
-      left: 15px;
-      top: 15px;
-      text-align: center;
-      line-height: 25px;
-      font-size: 20px; }
-    .faq .single-item.active::after {
-      content: "-";
-      background-color: #fff;
-      color: #222; }
-    .faq .single-item.active {
-      color: #fff; }
-      .faq .single-item.active h4 {
-        color: #fff; }
-    .faq .single-item h4 {
-      font-size: 16px;
-      margin: 0; }
-    .faq .single-item .content {
-      padding-top: 15px;
-      font-size: 14px;
-      font-weight: 400;
-      display: none; }
-
-.single-faq {
-  border: 1px solid #cad4de;
-  padding: 35px;
-  margin-bottom: 30px;
-  border-radius: 5px;
-  color: #7d91aa;
-  font-size: 14px;
-  font-weight: 300; }
-  .single-faq h2 {
-    font-size: 24px;
-    margin-bottom: 20px; }
-    .single-faq h2 span {
-      height: 40px;
-      width: 40px;
-      text-align: center;
-      line-height: 40px;
-      color: #fff;
-      border-radius: 4px;
-      margin-right: 20px; }
-      @media only screen and (max-width: 991px) {
-        .single-faq h2 span {
-          font-size: 18px;
-          line-height: 30px;
-          height: 30px;
-          width: 30px;
-          margin-right: 15px; } }
-
-.faq-sidebar-wrap {
-  border: 1px solid #cad4de;
-  margin-bottom: 30px;
-  padding: 35px;
-  border-radius: 4px; }
-  @media only screen and (max-width: 991px) {
-    .faq-sidebar-wrap {
-      padding: 15px; } }
-  .faq-sidebar-wrap h3 {
-    font-size: 20px;
-    font-weight: 400;
-    margin: 0 0 15px; }
-
-.faq-sidebar {
-  padding: 0;
-  list-style: none;
-  margin: 0; }
-  .faq-sidebar li {
-    position: relative;
-    padding-left: 20px; }
-    .faq-sidebar li a:hover {
-      color: #222; }
-    .faq-sidebar li span {
-      color: #7d91aa;
-      position: absolute;
-      left: 0;
-      top: 0; }
-
-/*****************************
  *   08. footer-top
  ***************************** */
 footer {
@@ -973,40 +829,6 @@ footer {
   .about-content a.button {
     margin-top: 15px; }
 
-/*****************************
- *   11. team-area
- ***************************** */
-.single-team .inner {
-  text-align: center; }
-  .single-team .inner .team-img {
-    position: relative; }
-    .single-team .inner .team-img img {
-      width: 100%; }
-    .single-team .inner .team-img::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      opacity: 0; }
-    .single-team .inner .team-img:hover::after {
-      opacity: 0.4; }
-  .single-team .inner .team-content {
-    padding: 25px 0; }
-    .single-team .inner .team-content h4 {
-      font-size: 18px;
-      font-weight: 400; }
-    .single-team .inner .team-content h5 {
-      font-weight: 300;
-      font-size: 16px;
-      color: #7d91aa; }
-    .single-team .inner .team-content a {
-      display: inline-block;
-      color: #7d91aa;
-      padding: 2px;
-      margin: 0 3px;
-      font-size: 16px; }
 
 /*****************************
  *   12. contact-area
