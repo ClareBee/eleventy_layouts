@@ -22,7 +22,7 @@ banners:
 about:
   title: 'About'
   description: 'A small project using an Eleventy site to explore CSS layouts'
-  image: '/assets/img/motherboard.jpg'
+  image: '/assets/img/measurement.jpg'
   link:
     text: 'more'
     url: '/about'

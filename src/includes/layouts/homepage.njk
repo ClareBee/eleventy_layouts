@@ -10,9 +10,9 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="slide-content">
-              <div class="p-4 rounded" style="background-color: rgba(255, 255, 255, 0.7)">
+              <div class="slide-p rounded" style="background-color: rgba(255, 255, 255, 0.7)">
                 <h2>{{ banner.headline }}</h2>
-                <p class="text-dark font-weight-bold">{{ banner.blurb }}</p>
+                <h3 class="text-dark font-weight-bold">{{ banner.blurb }}</h3>
                 <div class="flex">
                   <div class="slide-btn">
                     <a href="{{ banner.link2.url }}" class="button">{{ banner.link1.text }}</a>
@@ -34,9 +34,9 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <div class="about-content">
-          <h3>{{ about.title }}</h3>
-          <p>{{ about.description }}</p>
+        <div class="about-content px-4">
+          <h2 class="text-header">{{ about.title }}</h3>
+          <p class="text-lg">{{ about.description }}</p>
           <a href="{{ about.link.url }}" class="button">{{ about.link.text }}</a>
         </div>
       </div>
@@ -48,7 +48,8 @@
     </div>
   </div>
 </div>
-<div class="service-area spt">
+<hr />
+<div class="service-area spmd">
   <div class="container">
     <div class="section-title" data-margin="0 0 40px">
       <h2>{{ topics.title }}</h2>

@@ -26,9 +26,10 @@
 
   <div class="site">
     <header>
-      <div class="container">
+      <div class="custom-container">
         <div class="row">
-          <div class="col-6 col-sm-3 logo-column">
+          <div class="col-6 col-sm-3 logo-column flex align-items-center justify-content-center">
+            <img class="logo-img" src="/assets/img/logo-img.jpg" alt="site logo" />
             <a href="/" class="logo">
               <h4 class="text-light">LayOuts</h4>
             </a>
@@ -68,7 +69,7 @@
       <div class="page-title sp" style="background-image: url({{ backgroundImage }})">
         <div class="container text-center">
           <h2>{{ title }}</h2>
-          <p>{{ description }}</p>
+          <h3>{{ description }}</h3>
         </div>
       </div>
     {% endblock pageHeader %}
@@ -81,36 +82,8 @@
     {% endblock postContent %}
     <footer>
       <div class="footer-top">
-        <div class="container">
-          <div class="row d-flex justify-content-between">
-            <div class="col-md-6 col-lg-3 footer_widget">
-              <div class="inner">
-                <h4>About</h4>
-                <p>Small project exploring 11ty static site generator adapting templates from Flat Pro.</p>
-                <p>Used as a learning log for CSS layout techniques.</p>
-                <p>Future plan to integrate with Netlify CMS.</p>
-              </div>
-            </div>
-              <div class="col-md-6 col-lg-3 footer_widget">
-                <div class="inner">
-                  <h4>Recent Posts</h4>
-                  <div class="media">
-                    <a href="#">
-                      <img src="assets/img/recent1.jpg" class="d-flex mr-3" alt="">
-                    </a>
-                    <div class="media-body">
-                      <h5>
-                        <a href="#">Coming soon</a>
-                      </h5>
-                      <span>Sept 7, 2019</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
+      </div>
+      <div class="footer-bottom">
           <div class="container">
             <div class="row">
               <div class="col-lg-6">
@@ -129,7 +102,6 @@
             </div>
           </div>
         </div>
-      </div>
     </footer>
   </div>
 

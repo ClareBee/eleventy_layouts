@@ -3,6 +3,7 @@ layout: 'layouts/simple.njk'
 title: 'About'
 description: ''
 backgroundImage: '/assets/img/circuit.jpg'
+image: '/assets/img/measurement.jpg'
 ---
 
 Small project exploring 11ty static site generator adapting templates from Flat Pro.

@@ -1,7 +1,7 @@
 ---
 layout: 'layouts/topics.njk'
 title: 'Topics'
-description: 'whatever'
+description: ''
 backgroundImage: '/assets/img/circuit.jpg'
 eleventyExcludeFromCollections: true
 ---

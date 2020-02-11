@@ -78,8 +78,15 @@ body {
   color: #847E89;
 }
 
-h4, .fa {
+.text-header {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 1.2;
+}
+h4, .fa, .text-lg {
   font-size: 3rem;
+  line-height: 1.5;
 }
 p, li, a {
   font-size: 1.5rem;
@@ -109,6 +116,9 @@ a,
 span {
   display: inline-block; }
 
+.custom-container {
+  padding: 0 2rem;
+}
 .no-padding {
   padding: 0; }
 
@@ -130,6 +140,11 @@ span {
 
 .spb {
   padding-bottom: 90px; }
+
+.spmd {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
 /* preloader css */
 .preloader {
@@ -202,7 +217,7 @@ span {
   margin-bottom: 30px; }
   .section-title h2 {
     margin: 0 0 5px;
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: 700;
     color: #252323; }
   .section-title.white {
@@ -239,16 +254,24 @@ iframe {
  ***************************** */
 header {
   background-color: #252323;
-  padding: 18px 0; }
+  padding: 18px 0;
+ }
 
 .logo-column a.logo {
-  height: 35px;
-  padding: 5px 0; }
+  padding: 5px 0;
+  text-align: center;
+}
   .logo-column a.logo img {
     max-height: 100%; }
 
-.nav-column {
-  padding: 5px 0;
+  .logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 0 1rem 0 0;
+  }
+  .nav-column {
+  padding: 15px 0;
   font-size: 16px; }
   .nav-column a, .nav-column span {
     color: #FCF7F8;
@@ -265,7 +288,7 @@ header {
     .nav-column .right-nav .header-social {
       display: inline-block; }
       .nav-column .right-nav .header-social a {
-        padding: 0 5px;
+        padding: 0 15px;
         vertical-align: top; }
 
 #menu ul {
@@ -379,8 +402,9 @@ header {
       .hero-slider .single-slide h2 {
         font-size: 30px;
         line-height: 35px; } }
-  .hero-slider .single-slide .slide-btn {
-    margin-top: 50px; }
+  .single-slide .slide-btn {
+    margin: 40px 20px;
+  }
     .hero-slider .single-slide .slide-btn a:not(:last-child) {
       margin-right: 4px; }
 .hero-slider .owl-dots {
@@ -413,6 +437,9 @@ header {
   .hero-slider .owl-nav > div.owl-next {
     left: auto;
     right: 0; }
+  .slide-p {
+    padding: 1rem 3.5rem;
+  }
 
 /*****************************
  *   03. service-area
@@ -581,7 +608,7 @@ footer {
   line-height: 24px; }
 
 .footer-top {
-  padding: 65px 0; }
+  padding: 45px 0; }
   @media only screen and (max-width: 991px) {
     .footer-top {
       padding: 30px 0; } }
