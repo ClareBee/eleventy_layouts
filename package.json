@@ -1,13 +1,15 @@
 {
   "name": "eleventy-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "Trying out Eleventy as a learning log for CSS layouts",
   "main": "index.js",
   "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "compile": "eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "clarebee",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.8.3",
