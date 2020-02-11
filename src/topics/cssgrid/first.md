@@ -6,6 +6,8 @@ faIcon: 'map'
 ```css
 .container {
   display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 20px;
 }
 ```
 <div class="grid-container">
