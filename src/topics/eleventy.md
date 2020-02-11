@@ -1,5 +1,5 @@
 ---
-title: 'music'
+title: 'eleventy'
 description: 'lorem ipsum'
-faIcon: 'music'
+faIcon: 'bolt'
 ---

@@ -1,5 +1,5 @@
 ---
-title: 'video editing'
+title: 'Flexbox'
 description: 'lorem ipsum'
 faIcon: 'magic'
 ---

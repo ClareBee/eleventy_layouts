@@ -10,11 +10,16 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="slide-content">
-              <div class="p-2 rounded" style="background-color: rgba(255, 255, 255, 0.7)">
+              <div class="p-4 rounded" style="background-color: rgba(255, 255, 255, 0.7)">
                 <h2>{{ banner.headline }}</h2>
                 <p class="text-dark font-weight-bold">{{ banner.blurb }}</p>
-                <div class="slide-btn">
-                  <a href="{{ banner.link.url }}" class="button">{{ banner.link.text }}</a>
+                <div class="flex">
+                  <div class="slide-btn">
+                    <a href="{{ banner.link2.url }}" class="button">{{ banner.link1.text }}</a>
+                  </div>
+                  <div class="slide-btn">
+                    <a href="{{ banner.link2.url }}" class="button">{{ banner.link2.text }}</a>
+                  </div>
                 </div>
               </div>
             </div>
