@@ -18,14 +18,12 @@
  * 00 - 00 - common & reset css
  * 01. header
  * 02. hero-area
- * 04. service-area
- * 05. portfolio-area
- * 06. testimonial-area
- * 08. footer-top
- * 09. tabs-area
- * 10. about-area
- * 12. contact-area
- * 15. extra */
+ * 03. service-area
+ * 04. testimonial-area
+ * 05. footer-top
+ * 06. about-area
+ * 07. contact-area
+ * 08. extra */
 /*****************************
  *   00 - common & reset css
  *****************************
@@ -52,17 +50,17 @@
 .c3, #menu ul ul li a:hover, .single-service.bordered .inner:hover .icon, .bordered.single-service-2 .inner:hover .icon, .bordered.single-service-3 .inner:hover .icon,
 .single-service.bordered .inner:hover h4,
 .bordered.single-service-2 .inner:hover h4,
-.bordered.single-service-3 .inner:hover h4, .single-service-3 .inner:hover .title .icon, .isotope-menu li.active, .isotope-menu li:hover, .single-portfolio .inner .portfolio-img .hover-content .button, .single-portfolio .inner .portfolio-content h3:hover, .single-pricing .inner a.button:hover, .single-pricing-2 .inner a.button:hover, .single-pricing-2.active .inner a.button {
+.bordered.single-service-3 .inner:hover h4, .single-service-3 .inner:hover .title .icon, .isotope-menu li.active, .isotope-menu li:hover, .single-pricing .inner a.button:hover, .single-pricing-2 .inner a.button:hover, .single-pricing-2.active .inner a.button {
   color: #305252; }
 
-.c3-bg, .bg1, .button, .hero-slider .owl-dots .owl-dot.active, .single-service-2:hover .inner, .single-portfolio .inner .portfolio-img .hover-content, .footer_widget .nw_form button, .tabs-area .tabs-nav li a.active, .single-pricing.active .inner, .active.single-pricing-2 .inner, .single-pricing-2.active .inner .title .price {
+.c3-bg, .bg1, .button, .hero-slider .owl-dots .owl-dot.active, .single-service-2:hover .inner, .footer_widget .nw_form button, .single-pricing.active .inner, .active.single-pricing-2 .inner, .single-pricing-2.active .inner .title .price {
   background-color: #305252; }
 
-.c3-bo, .button, .single-service.bordered .inner:hover, .bordered.single-service-2 .inner:hover, .bordered.single-service-3 .inner:hover, .testimonial-slider .single-slide, .tabs-area .tabs-nav li a::after, .tabs-area .tabs-nav li a.active, .contact-form input:not([type="submit"]):focus,
+.c3-bo, .button, .single-service.bordered .inner:hover, .bordered.single-service-2 .inner:hover, .bordered.single-service-3 .inner:hover, .testimonial-slider .single-slide, .contact-form input:not([type="submit"]):focus,
 .contact-form textarea:focus {
   border-color: #305252 !important; }
 
-.trns, .button, .nav-column a, .nav-column span, .nav-column .right-nav span, form.search-form, #menu ul > li > a, #menu ul ul, #menu ul ul::after, #menu ul ul li a, .hero-slider .owl-dots .owl-dot, .single-service .inner, .single-service-2 .inner, .single-service-3 .inner, .single-service .inner .title .icon, .single-service-2 .inner .title .icon, .single-service-3 .inner .title .icon, .single-service .inner .title h4, .single-service-2 .inner .title h4, .single-service-3 .inner .title h4, .single-service .inner .content, .single-service-2 .inner .content, .single-service-3 .inner .content, .isotope-menu li, .single-portfolio .inner .portfolio-img .hover-content, .single-portfolio .inner .portfolio-content h3, .contact-form input:not([type="submit"]),
+.trns, .button, .nav-column a, .nav-column span, .nav-column .right-nav span, form.search-form, #menu ul > li > a, #menu ul ul, #menu ul ul::after, #menu ul ul li a, .hero-slider .owl-dots .owl-dot, .single-service .inner, .single-service-2 .inner, .single-service-3 .inner, .single-service .inner .title .icon, .single-service-2 .inner .title .icon, .single-service-3 .inner .title .icon, .single-service .inner .title h4, .single-service-2 .inner .title h4, .single-service-3 .inner .title h4, .single-service .inner .content, .single-service-2 .inner .content, .single-service-3 .inner .content, .isotope-menu li, .contact-form input:not([type="submit"]),
 .contact-form textarea {
   -webkit-transition: all 0.3s cubic-bezier(0.84, 0.35, 0.39, 0.74) 0s;
   transition: all 0.3s cubic-bezier(0.84, 0.35, 0.39, 0.74) 0s; }
@@ -73,6 +71,11 @@ html {
 
 body {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #847E89;
 }
 
 h4, .fa {
@@ -218,13 +221,6 @@ span {
   .page-title p:last-child {
     margin-bottom: 0; }
 
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  line-height: 27px;
-  font-weight: 400;
-  color: #847E89; }
-
 h1, h2, h3, h4, h5, h6 {
   color: #252323; }
 
@@ -266,50 +262,11 @@ header {
     position: relative; }
     .nav-column .right-nav span {
       padding: 0 15px; }
-    .nav-column .right-nav .search-icon.active {
-      color: red; }
-    .nav-column .right-nav .search-icon.active::before {
-      content: ""; }
     .nav-column .right-nav .header-social {
       display: inline-block; }
       .nav-column .right-nav .header-social a {
         padding: 0 5px;
         vertical-align: top; }
-
-form.search-form {
-  position: absolute;
-  right: 100%;
-  top: 50%;
-  z-index: 2;
-  width: 230px;
-  transform: translateY(-50%);
-  opacity: 0;
-  visibility: hidden; }
-  form.search-form.active {
-    opacity: 1;
-    visibility: visible; }
-  @media only screen and (max-width: 767px) {
-    form.search-form {
-      transform: translateY(50%) translateX(0%);
-      right: 50%;
-      margin-top: 20px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); } }
-
-form.search-form input {
-  border: none;
-  width: 100%;
-  border-radius: 5px;
-  height: 40px;
-  text-indent: 20px; }
-
-form.search-form button {
-  border: none;
-  right: 0;
-  position: absolute;
-  top: 0;
-  width: 38px;
-  background: transparent;
-  height: 100%; }
 
 #menu ul {
   text-align: right;
@@ -458,7 +415,7 @@ form.search-form button {
     right: 0; }
 
 /*****************************
- *   04. service-area
+ *   03. service-area
  ***************************** */
 .single-service, .single-service-2, .single-service-3 {
   margin: 15px 0; }
@@ -544,9 +501,6 @@ form.search-form button {
     .single-service-3 .inner:hover .title .icon {
       background-color: #fff; }
 
-/*****************************
- *   05. portfolio-area
- ***************************** */
 .isotope-menu {
   margin: 0 0 20px;
   padding: 0;
@@ -562,57 +516,9 @@ form.search-form button {
     cursor: pointer;
     color: #FCF7F8; }
 
-.single-portfolio {
-  margin: 20px 0; }
-  .single-portfolio .inner .portfolio-img {
-    position: relative; }
-    .single-portfolio .inner .portfolio-img img {
-      width: 100%; }
-    .single-portfolio .inner .portfolio-img .hover-content {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      left: 0;
-      top: 0;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      -webkit-flex-direction: column;
-      flex-direction: column;
-      text-align: center;
-      opacity: 0;
-      visibility: hidden; }
-      .single-portfolio .inner .portfolio-img .hover-content .button {
-        background-color: #fff;
-        border-color: #fff !important; }
-        .single-portfolio .inner .portfolio-img .hover-content .button:hover {
-          background-color: #222;
-          color: #fff;
-          border-color: #222 !important; }
-    .single-portfolio .inner .portfolio-img:hover .hover-content {
-      opacity: 1;
-      visibility: visible; }
-  .single-portfolio .inner .portfolio-content {
-    text-align: center;
-    padding-top: 25px;
-    color: #6d7784; }
-    .single-portfolio .inner .portfolio-content a {
-      display: block; }
-    .single-portfolio .inner .portfolio-content h3 {
-      font-weight: 400;
-      margin: 0;
-      font-size: 24px; }
 
 /*****************************
- *   06. testimonial-area
+ *   04. testimonial-area
  ***************************** */
 .testimonial-area .section-title {
   margin-bottom: 45px; }
@@ -667,7 +573,7 @@ form.search-form button {
         right: -12.5px; } }
 
 /*****************************
- *   08. footer-top
+ *   05. footer-top
  ***************************** */
 footer {
   background-color: #252323;
@@ -761,60 +667,7 @@ footer {
         margin-top: 5px; } }
 
 /*****************************
- *   09. tabs-area
- ***************************** */
-.tabs-area .tabs-nav {
-  display: block;
-  padding-bottom: 30px;
-  overflow: hidden; }
-  .tabs-area .tabs-nav li {
-    width: 25%;
-    padding: 0 12.5px;
-    display: inline-block;
-    float: left;
-    position: relative; }
-    @media only screen and (max-width: 991px) {
-      .tabs-area .tabs-nav li {
-        width: 50%;
-        margin-top: -5px; } }
-    .tabs-area .tabs-nav li a {
-      text-align: center;
-      color: #252323;
-      display: block;
-      border-bottom: 2px solid #252323;
-      padding: 25px 0; }
-      .tabs-area .tabs-nav li a::after {
-        content: "";
-        border: 10px solid transparent;
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        opacity: 0;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%); }
-      .tabs-area .tabs-nav li a i {
-        display: block;
-        font-size: 24px;
-        margin-bottom: 12px; }
-      .tabs-area .tabs-nav li a span {
-        font-size: 18px;
-        font-weight: 700; }
-    .tabs-area .tabs-nav li a.active {
-      color: #fff;
-      border-radius: 5px; }
-      .tabs-area .tabs-nav li a.active::after {
-        border-bottom-color: transparent !important;
-        border-left-color: transparent !important;
-        border-right-color: transparent !important;
-        opacity: 1; }
-
-.tabs-area .tab-content {
-  border: 1px solid #cad4de;
-  padding: 40px;
-  border-radius: 4px; }
-
-/*****************************
- *   10. about-area
+ *   06. about-area
  ***************************** */
 .about-content {
   color: #7d91aa;
@@ -831,7 +684,7 @@ footer {
 
 
 /*****************************
- *   12. contact-area
+ *   07. contact-area
  ***************************** */
 @media only screen and (max-width: 767px) {
   .contact-info {
@@ -900,7 +753,7 @@ footer {
 
 
 /*****************************
- *   15. extra
+ *   08. extra
  ***************************** */
 .single-gallery .inner {
   margin: 15px 0;
@@ -930,69 +783,9 @@ footer {
     margin-bottom: 75px;
     display: inline-block; }
 
-.single-counter {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  background-color: rgba(255, 255, 255, 0.15);
-  border-radius: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  display: -webkit-inline-flex;
-  display: -moz-inline-flex;
-  display: -ms-inline-flex;
-  display: -o-inline-flex;
-  display: inline-flex;
-  margin: 8px; }
-  .single-counter span:first-child {
-    font-size: 34px;
-    display: block;
-    font-weight: 600; }
-  .single-counter .text {
-    font-size: 16px;
-    display: block; }
-
-.error-area {
-  background-position: center center;
-  background-size: cover;
-  text-align: center;
-  height: 540px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  -webkit-flex-direction: column;
-  flex-direction: column; }
-  @media only screen and (max-width: 767px) {
-    .error-area {
-      height: 300px; } }
-  .error-area h1 {
-    font-size: 40px;
-    font-weith: 400;
-    margin: 0 0 20px; }
-
 .flex {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
 /*# sourceMappingURL=main.css.map */
