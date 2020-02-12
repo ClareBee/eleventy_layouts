@@ -5,5 +5,3 @@ description: ''
 backgroundImage: '/assets/img/circuit.jpg'
 eleventyExcludeFromCollections: true
 ---
-## Topics
-something

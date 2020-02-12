@@ -107,7 +107,19 @@ input:focus,
 input:active,
 select {
   text-decoration: none;
-  outline: none !important; }
+  outline: none !important;
+cursor: pointer; }
+
+a, a:visited {
+  color: purple;
+}
+a:hover, a:focus {
+  color: grey;
+}
+
+.button, .button:visited {
+  color: white;
+}
 
 img {
   max-width: 100%; }
@@ -699,7 +711,7 @@ footer {
 .about-content {
   color: #7d91aa;
   font-weight: 300;
-  margin-top: 25px; }
+  margin-top: 35px; }
   @media only screen and (max-width: 991px) {
     .about-content {
       margin-bottom: 20px; } }
@@ -708,7 +720,14 @@ footer {
     margin-bottom: 30px; }
   .about-content a.button {
     margin-top: 15px; }
+.about-page {
+  padding-top: 35px;
+  min-height: 300px;
+}
 
+.about-page * {
+  font-size: 2rem;
+}
 
 /*****************************
  *   07. contact-area
@@ -814,5 +833,37 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.resources {
+  width: 50%;
+  margin: 15px auto;
+}
+
+@media only screen and (max-width: 700px){
+  width: 100%;
+}
+
+.resource {
+  width: 100%;
+  list-style: none;
+}
+
+.eleventy {
+  display: flex;
+  justify-content: space-around;
+}
+
+.eleventy img {
+  border-radius: 5px;
+  margin: 0 0 1rem 0;
+}
+
+.eleventy li a {
+  font-size: 2rem;
+}
+
+.full-height {
+  min-height: 350px;
 }
 /*# sourceMappingURL=main.css.map */

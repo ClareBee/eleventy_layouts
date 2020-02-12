@@ -6,10 +6,10 @@ banners:
     background: '/assets/img/motherboard.jpg'
     link1:
         text: 'CSS Grid'
-        url: '/cssgrid'
+        url: '/topics/cssgrid'
     link2:
         text: 'Flexbox'
-        url: '/flexbox'
+        url: '/topics/flexbox'
   - headline: 'Eleventy Experiment'
     blurb: 'First steps in 11ty and Nunjucks'
     background: '/assets/img/whiteboard.jpg'

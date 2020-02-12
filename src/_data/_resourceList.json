@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Wes Bos - CSS Grid",
+    "content": "Free walkthrough of main concepts and example projects",
+    "site": "https://cssgrid.io/",
+    "faIcon": "user"
+  },
+  {
+    "name": "Wes Bos - What the Flexbox?!",
+    "content": "Free walkthrough of main concepts and example projects",
+    "site": "https://flexbox.io/",
+    "faIcon": "user"
+  },
+  {
+    "name": "CSSTricks - A Complete Guide to Grid",
+    "content": "Comprehensive overview",
+    "site": "https://css-tricks.com/snippets/css/complete-guide-grid/",
+    "faIcon": "laptop"
+  },
+   {
+      "name": "CSSTricks - A Complete Guide to Flexbox",
+      "content": "Comprehensive overview",
+      "site": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+      "faIcon": "laptop"
+    },
+    {
+      "name": "Grid Garden",
+      "content": "A game for learning the Grid",
+      "site": "https://cssgridgarden.com/",
+      "faIcon": "gamepad"
+    },
+    {
+      "name": "Flexbox Froggy",
+      "content": "Game to learn the techniques",
+      "site": "https://flexboxfroggy.com/",
+      "faIcon": "gamepad"
+    }
+]
