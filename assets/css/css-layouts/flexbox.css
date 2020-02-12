@@ -1,0 +1,57 @@
+.flex-container {
+  display: flex;
+}
+.about-content .flex-post  h3 {
+  margin-bottom: 15px;
+}
+
+.flex-item {
+  border: 1px solid grey;
+  border-radius: 3px;
+  color: black;
+  text-align: center;
+}
+
+.flex-item-md {
+  width: 200px;
+  margin: 10px;
+}
+
+.flex-item-sm {
+  width: 75px;
+  margin: 10px;
+}
+
+.flex-container-1 {
+  flex-direction: column-reverse;
+}
+
+.flex-container-2 {
+  flex-wrap: wrap;
+}
+
+.box {
+  flex: 1;
+}
+
+.box-3 {
+  order: -1;
+}
+
+.box-2 {
+  order: 4;
+}
+
+.flex-container-3 {
+  justify-content: center;
+}
+.flex-container-4 {
+  flex-direction: column;
+  align-items: center;
+}
+.flex-container-5 {
+  height: 250px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
