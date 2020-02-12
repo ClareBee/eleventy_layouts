@@ -1,26 +1,19 @@
 {% extends 'layouts/simple.njk' %}
 
 {% block postContent %}
+    <ul class="resources">
+      {% for resource in _resourceList %}
+        <li class="resource">
+          <div class="resource-data">
+            <span>
+              <i class="fa fa-{{ resource.faIcon }}"></i>
+                {{ resource.name }}
+            </span>
+            <p>{{ resource.content }}</p>
 
-  <div class="row ml-4 mr-4 sp">
-    <div class="testimonial-slider bordered">
-      {% for resource in collections.resources %}
-        <div class="single-slide">
-          <div class="inner">
-            <p>{{ resource.data.content }}</p>
-            <div class="client-info">
-              <div class="client-img">
-                <img src="{{ resource.data.icon }}" alt="resource">
-              </div>
-              <div class="client-data">
-                <h4>{{ resource.data.name }}</h4>
-                <span>{{ resource.data.site }}</span>
-              </div>
-            </div>
+            <span><a href="{{ resource.site }}">{{ resource.site }}</a></span>
           </div>
-        </div>
+        </li>
       {% endfor %}
-    </div>
-  </div>
-
+    </ul>
 {% endblock postContent %}

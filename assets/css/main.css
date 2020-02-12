@@ -699,7 +699,7 @@ footer {
 .about-content {
   color: #7d91aa;
   font-weight: 300;
-  margin-top: 25px; }
+  margin-top: 35px; }
   @media only screen and (max-width: 991px) {
     .about-content {
       margin-bottom: 20px; } }
@@ -814,5 +814,19 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.resources {
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 700px){
+  width: 100%;
+}
+
+.resource {
+  width: 100%;
+  list-style: none;
 }
 /*# sourceMappingURL=main.css.map */
