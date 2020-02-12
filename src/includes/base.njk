@@ -17,7 +17,9 @@
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="/assets/css/slicknav.css">
   <link rel="stylesheet" href="/assets/css/main.css">
-</head>
+  <link rel="stylesheet" href="/assets/css/css-layouts/css-grid.css">
+  <link rel="stylesheet" href="/assets/css/css-layouts/responsive-example.css">
+  <link rel="stylesheet" href="/assets/styles/monokai-sublime.css">
 
 <body>
   <div class="preloader">
@@ -115,6 +117,20 @@
   <script src="/assets/js/vendor/loopcounter.js"></script>
   <script src="/assets/js/vendor/slicknav.min.js"></script>
   <script src="/assets/js/active.js"></script>
+  <script>
+  console.log('loading')
+  const navButton = document.getElementById("menu-btn");
+  console.log('nav', navButton)
+  function toggle({ target }){
+    console.log('hello')
+    const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+    navButton.setAttribute('aria-expanded', !expanded);
+    console.log('expanded', expanded)
+  }
+  navButton && navButton.addEventListener("click", toggle);
+  </script>
+  <script src="/assets/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 
 </body>
 

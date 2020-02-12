@@ -67,10 +67,10 @@
 
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 body {
-  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 27px;
@@ -92,7 +92,7 @@ p, li, a {
   font-size: 1.5rem;
 }
 
-* {
+*, *::after, *::before {
   margin: 0;
   padding: 0;
   box-sizing: inherit;

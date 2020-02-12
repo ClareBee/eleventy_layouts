@@ -1,0 +1,231 @@
+.wrapper {
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 20px;
+}
+.top {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "hero hero cta1"
+    "hero hero cta2";
+}
+
+.hero {
+  grid-area: hero;
+  min-height: 400px;
+  background: white;
+  background-size: cover;
+  background-position: bottom right;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color:silver;
+  /* lea verou's pattern */
+  background-image:
+  radial-gradient(circle at 100% 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+  radial-gradient(circle at 0    150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+  radial-gradient(circle at 50%  100%, white 10%, silver 10%, silver 23%, white 23%, white 30%, silver 30%, silver 43%, white 43%, white 50%, silver 50%, silver 63%, white 63%, white 71%, transparent 71%, transparent),
+  radial-gradient(circle at 100% 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent),
+  radial-gradient(circle at 0    50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent);
+  background-size: 100px 50px;
+}
+
+.hero > * {
+  background: grey;
+  color: white;
+  padding: 5px;
+}
+
+.hero > h1 {
+  font-size: 3rem;
+}
+
+.cta {
+  background: grey;
+  color: white;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+}
+
+.cta1 {
+  grid-area: cta1;
+}
+
+.cta2 {
+  grid-area: cta2;
+}
+
+.place {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+/* navigation */
+.menu ul {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+  letter-spacing: normal;
+  transition: all .5s;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  border: 1px solid lightgrey;
+  height: 100px;
+  transition: all .3s ease-in;
+}
+
+.menu a:hover {
+  background-color: lightgrey;
+  transform: scale(.98);
+}
+
+[aria-controls="menu-list"]{
+  display: none;
+}
+
+/* features */
+.features {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.feature {
+  background: lightgrey;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature .icon {
+  font-size: 40px;
+  margin: 5px;
+}
+
+.feature p {
+  color: rgba(0,0,0,0.5);
+}
+
+/* about */
+.about {
+  background: grey;
+  color: white;
+  font-size: 2rem;
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  align-items: center;
+}
+
+.about button {
+  padding: 1rem 2rem;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 2rem 0;
+}
+/* gallery */
+.gallery {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.gallery img, .about__mockup {
+  width: 100%;
+}
+
+.about__mockup {
+  padding: 2rem;
+}
+
+.gallery h2 {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.gallery h2:before, .gallery h2:after {
+  content: '';
+  display: block;
+  height: 10px;
+  background: linear-gradient(to left, grey, transparent);
+}
+
+.gallery h2:after {
+  background: linear-gradient(to right, grey, transparent);
+}
+
+@media only screen and (max-width: 1000px){
+  [aria-controls="menu-list"]{
+    display: block;
+    background: grey;
+    color: white;
+    border: none;
+    padding: 5px;
+  }
+  .menu {
+    order: -1;
+    perspective: 800px;
+  }
+
+  .menu ul {
+    max-height: 0;
+    overflow: hidden;
+    transform: rotateX(90deg);
+  }
+  [aria-expanded="true"] ~ ul {
+    display: grid;
+    max-height: 500px;
+    transform: rotateX(0);
+  }
+  [aria-expanded="false"] .close {
+    display: none;
+  }
+  [aria-expanded="true"] .close {
+    color: white;
+    display: inline-block;
+  }
+  [aria-expanded="true"] .open {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px){
+  .top {
+    grid-template-areas:
+      "hero hero"
+      "cta1 cta2"
+  }
+
+/* about section */
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 500px){
+  .top {
+    grid-template-areas:
+      "hero"
+      "cta1"
+      "cta2"
+  }
+}
