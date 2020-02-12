@@ -1,4 +1,4 @@
-{% extends 'layouts/simple.njk' %}
+{% extends 'base.njk' %}
 
 {% block postContent %}
 
@@ -15,8 +15,7 @@
                   <h4>{{ topic.data.title }}</h4>
               </div>
               <div class="content">
-                  <p>{{ topic.data.description }}</p>
-                  <a href={{topic.url}}>Read more</a>
+                <a href={{topic.data.url}}>Read more</a>
               </div>
           </div>
       </div>
