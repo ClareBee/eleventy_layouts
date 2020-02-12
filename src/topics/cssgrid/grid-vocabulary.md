@@ -1,6 +1,7 @@
 ---
-title: 'grid vocabulary'
-description: 'lorem ipsum'
+title: 'Grid Vocabulary'
+description: 'Key terms'
+faIcon: 'book'
 ---
 
 tracks - the lines
@@ -12,7 +13,8 @@ grid-template-columns
 grid-template-rows
 grid-auto-rows = sizing for implicitly-created rows
 
-grid-auto-flow
+grid-auto-flow: row or column;
+grid-auto-flow: dense;
 
 
 fr unit = fractional (amount of space remaining once elements are laid out)
@@ -22,6 +24,17 @@ implicit grid/tracks - created by the browser e.g. wrapping row (dotted lines on
 explicit grid/tracks - created by our code (solid line in Firefox)
 
 
-autofit
-autofill
+auto-fit
+auto-fill
 minmax()
+fit-content()
+
+alignment:
+justify-items
+align-items
+
+justify-content;
+align-content
+
+justify-self
+align-self

@@ -1,5 +1,6 @@
 ---
+layout: 'layouts/grid-content.njk'
 title: 'CSS Grid'
-description: 'lorem ipsum'
+description: 'Exploring CSS Grid concepts & examples'
 faIcon: 'map'
 ---
