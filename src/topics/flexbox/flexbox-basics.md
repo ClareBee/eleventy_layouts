@@ -3,6 +3,12 @@ title: 'Flexbox Fundamentals'
 description: 'Inspired by Wes Bos'
 faIcon: 'list'
 ---
+
+<a href="/topics/flexbox">
+  <i class="fa fa-arrow-left"></i>
+</a>
+
+-----
 <div class="flex-post">
 
 ### basic flexbox

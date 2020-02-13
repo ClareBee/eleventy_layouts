@@ -9,7 +9,7 @@ faIcon: 'book'
 
 -----
 
-| term | definition |
+| term | definition  - [main source](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)|
 | ---- | ------- |
 | tracks | the lines, not the rows/cols |
 | grid-gap | sets the gaps (gutters) between rows and columns. Shorthand for row-gap and column-gap.|
