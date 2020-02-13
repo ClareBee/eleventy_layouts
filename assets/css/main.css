@@ -78,6 +78,16 @@ body {
   color: #847E89;
 }
 
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
 .text-header {
   font-size: 4rem;
   font-weight: 700;
