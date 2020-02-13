@@ -1,0 +1,74 @@
+.app-wrap {
+  max-width: 440px;
+  height: 800px;
+  margin: 5vh auto 5vh auto;
+  border:10px solid rgba(0,0,0,0.8);
+  border-bottom-width: 70px;
+  border-radius:10px;
+  box-shadow:0 0 50px  rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.app-wrap > * {
+  flex: 1 1 auto;
+}
+
+.app-wrap .button {
+  background-color: grey;
+  max-width: 75px;
+}
+
+.content {
+  padding: 20px;
+  background: white;
+  box-shadow: inset 0 5px 0 rgba(0,0,0,0.1);
+  line-height: 1.6;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.content img {
+  max-width:50%;
+  float:left;
+  margin-right: 10px;
+}
+
+.icon-bar a {
+  flex: 1;
+  text-align: center;
+  padding: 1.5rem;
+  border-left: 1px solid rgba(0,0,0,0.1);
+  background: lightgrey;
+  color: rgba(0,0,0,0.5);
+}
+
+.icon-bar a:first-child {
+  border-left: 0;
+}
+
+.icon-bar a:first-child, .icon-bar a:hover {
+  border-bottom: 5px solid rgba(0,0,0,0.1);
+}
+
+.icon-bar {
+  border-top:1px solid #E6E6E6;
+  display: flex;
+}
+
+.icon-bar i {
+  display: block;
+  font-size: 2.5rem;
+  color:white;
+  text-shadow:3px 3px 0 rgba(0,0,0,0.1);
+  padding-bottom: 1rem;
+}
+
+.app-header {
+  background: lightgrey;
+  color:rgba(0,0,0,0.5);
+  padding:1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
