@@ -7,18 +7,18 @@
     <div class="row">
     {% for item in collections.cssgrid %}
       <div class="col-lg-4 col-md-6 single-service">
-          <div class="inner">
-              <div class="title">
-                  <div class="icon">
-                      <i class="fa fa-{{ item.data.faIcon }}"></i>
-                  </div>
-                  <h4>{{ item.data.title }}</h4>
-              </div>
-              <div class="content">
-                  <p>{{ item.data.description }}</p>
-                  <a href={{item.url}}>Read more</a>
-              </div>
+        <div class="inner">
+          <div class="title">
+            <div class="icon">
+                <i class="fa fa-{{ item.data.faIcon }}"></i>
+            </div>
+            <h4>{{ item.data.title }}</h4>
           </div>
+          <div class="content">
+            <p>{{ item.data.description }}</p>
+            <a href={{item.url}}>Read more</a>
+          </div>
+        </div>
       </div>
     {% endfor %}
     </div>

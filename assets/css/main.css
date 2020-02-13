@@ -158,6 +158,21 @@ span {
   padding-bottom: 50px;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+table > * {
+  color: black;
+}
+
+table, th, td {
+  border: 1px solid darkgrey;
+  padding: 5px;
+}
+tr:nth-child(even) {
+  background-color: lightgrey;
+}
 /* preloader css */
 .preloader {
   display: -webkit-box;
