@@ -55,3 +55,25 @@
   flex-wrap: wrap;
   align-content: space-around;
 }
+
+.flex-container-6 {
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.align-item {
+  align-self: flex-end;
+}
+
+.flex-item-1 {
+  flex: 2;
+}
+
+.item-1 {
+  flex: 0 1 200px;
+}
+
+.item-2 {
+  flex: 1 1 200px;
+}
