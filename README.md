@@ -7,7 +7,7 @@
 <img src="/assets/img/contact.jpg" alt="contact" />
 
 -----
-
+<br />
 ### Using:
 - https://www.11ty.io/
 - https://highlightjs.org/
