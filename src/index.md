@@ -15,7 +15,7 @@ banners:
     background: '/assets/img/whiteboard.jpg'
     link1:
         text: 'Eleventy'
-        url: '/eleventy'
+        url: '/topics/eleventy'
     link2:
         text: 'Resources'
         url: '/resources'
